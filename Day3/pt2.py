@@ -1,6 +1,3 @@
-from os import cpu_count
-
-
 input = open("input.txt", "r")
 list = []
 gamma = ""
@@ -44,10 +41,9 @@ def createBinary(Zero, One):
             i += 1
         else:
             gammaRate = gammaRate + "1"
-            epsilonRate = epsilonRate + "2"
+            epsilonRate = epsilonRate + "0"
             i += 1
 
-    epsilonRate = epsilonRate.replace("2", "0")
     return (gammaRate, epsilonRate)
 
 
