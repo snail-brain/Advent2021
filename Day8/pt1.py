@@ -10,6 +10,7 @@ for out in input:
     o = out.split(" | ")
     outputs.append((o[1].strip()).split(" "))
 
+
 for code in outputs:
     for num in code:
         if len(num) == 2:
